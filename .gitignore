@@ -1,1 +1,28 @@
+# Dependencies
 node_modules/
+
+# Build output
+dist/
+out/
+build/
+
+# Electron specific
+*.asar
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables (may contain secrets)
+.env
+.env.local
