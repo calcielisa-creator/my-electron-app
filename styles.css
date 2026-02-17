@@ -8,11 +8,10 @@ body {
     height: 100vh;
     user-select: none;
     -webkit-app-region: drag;
-    background-image: url("images/outer-frame-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 20px;
+    margin: 0;
+    background: transparent;
+
 }
 
 .app {
@@ -23,6 +22,13 @@ body {
     gap: 0.5rem;
     width: 13.375rem;
     padding: 1rem 1.0625rem;
+
+    background-image: url("images/outer-frame-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+
 }
 
 
@@ -32,7 +38,7 @@ input,
 textarea,
 select {
     -webkit-app-region: no-drag;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 
@@ -40,13 +46,14 @@ select {
 
     display: flex;
     width: 157px;
+    aspect-ratio: 157/27;
     padding: 0.25rem 0.625rem;
     justify-content: center;
     align-items: center;
 
     border-radius: 6.25rem;
     border: 1px solid #c079ff;
-    background: #ce9ef8;
+    background: rgba(210, 164, 255, 0.40);
 
     color: var(--white, #fff);
 
@@ -80,11 +87,17 @@ select {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #c079ff;
     font-family: "Pixelify Sans";
-    font-size: 7.5rem;
+    font-size: 6.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
     letter-spacing: 0.45rem;
+
+    display: flex;
+    width: 11.25rem;
+    height: 4.4375rem;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -94,11 +107,11 @@ select {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #c079ff;
     font-family: "Pixelify Sans";
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
 
     width: 8.125rem;
 }
