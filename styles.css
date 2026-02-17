@@ -7,7 +7,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background: white;
+    background: rgb(253, 169, 218);
     user-select: none;
     -webkit-app-region: drag;
 }
